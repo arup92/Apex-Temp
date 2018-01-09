@@ -1,0 +1,35 @@
+/**
+ * --------------------------------------------------------------------------------
+ * Main Stylesheet
+ * --------------------------------------------------------------------------------
+ */
+
+/* Load the variabels */
+@import "variables";
+
+/* Load typography styles */
+@import "typography";
+
+/* Load the defaults */
+@import "defaults";
+
+/* Load header styles */
+@import "header";
+
+/* Load slider styles */
+@import "slider";
+
+/* Load services section styles */
+@import "services";
+
+/* Load services section styles */
+@import "testimonials";
+
+/* Home Posts Section */
+@import "home-posts";
+
+/* Load Footer Style */
+@import "footer";
+
+/* Load responsive rules */
+@import "responsive";

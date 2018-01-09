@@ -1,0 +1,166 @@
+/**
+ * -------------------------------------------------------------------------------
+ * Responsive
+ * -------------------------------------------------------------------------------
+*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .slider-margin {
+    margin: 0 1.5rem;
+  }
+
+  .cycle-prev,
+  .cycle-next {
+    font-size: 2.5rem;
+  }
+
+  .cycle-prev {
+    left: 0;
+  }
+
+  .cycle-next {
+    right: 0;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+  h1 {
+    font-size: $body-font-size*1.8;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .slide {
+    padding-top: $baseline * 8;
+  }
+
+  #testimonial-slider .slide-testimonial {
+    padding-top: $body-font-size*15;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+  .single-header {
+    h1 {
+      padding-top: $baseline*10;
+    }
+  }
+
+  #map {
+    height: 350px;
+    margin-top: $baseline;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  /* Navbar */
+  .has-child {
+    position: relative;
+
+    &::after {
+      content: "\f107";
+      font-family: "FontAwesome";
+      position: absolute;
+      right: 5%;
+      top: 0%;
+      cursor: pointer;
+    }
+
+    a {
+      &::after {
+        content: none;
+      }
+    }
+
+    .has-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  .navbar ul li {
+    ul {
+      background-color: transparent;
+      position: relative;
+
+      li {
+        width: 100%;
+
+        ul {
+          background-color: transparent;
+          left: 0;
+          margin-top: 0;
+
+          li:first-child {
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+
+      .has-child {
+        >a {
+          &::after {
+            content: "";
+          }
+        }
+      }
+    }
+
+    &:hover {
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  /* Navbar */
+
+  .navbar {
+    .search-form {
+      margin: $body-font-size;
+    }
+  }
+
+  .navbar-collapse {
+    margin-top: 2.5rem;
+    background-color: rgba(255 , 255, 255, .9);
+    @include border-radius(3px);
+  }
+
+  .table {
+    margin-bottom: $baseline;
+  }
+
+  .col-lg-4 {
+    margin-bottom: $baseline;
+  }
+
+  .post-single-container {
+    img {
+      width: 100%;
+      margin-bottom: $baseline;
+      padding-left: 0;
+    }
+  }
+
+  .sidebar .widget:first-child {
+    margin-top: $theme-margin;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { }

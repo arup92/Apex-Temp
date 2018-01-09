@@ -1,0 +1,80 @@
+/**
+ * ---------------------------------------------------------------------------------
+ * Slider
+ * ---------------------------------------------------------------------------------
+ */
+
+.margin-top {
+  position: relative;
+}
+
+.slide {
+  min-height: 650px;
+  width: 100%;
+
+  padding-top: $baseline * 11;
+}
+
+#slide-1 {
+   background: $color-border url('../images/slider-1.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: repeat-x;
+ }
+
+#slide-2 {
+  background: $color-border url('../images/slider-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+ }
+
+#slide-3 {
+  background: $color-border url('../images/slider-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+ }
+
+.cycle-prev,
+.cycle-next {
+  font-size: $baseline * 2;
+  margin-top: 1.5rem;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+
+  a {
+    color: rgba(255, 255, 255, .5);
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.cycle-prev {
+  left: 3rem;
+}
+
+.cycle-next {
+  right: 3rem;
+}
+
+.slider-margin {
+  margin: 0 ($baseline * 3);
+}
+
+.fancy-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-bottom: $baseline/2;
+  padding: 1rem;
+}
+
+.fancy-box h1, .fancy-box h3 {
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 0;
+}

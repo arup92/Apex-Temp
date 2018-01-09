@@ -1,0 +1,57 @@
+/**
+ * --------------------------------------------------------------------------------
+ * Home Posts 3 Sections
+ * --------------------------------------------------------------------------------
+ */
+
+.home-featured-image {
+  text-align: center;
+  margin-top: -$baseline;
+  margin-bottom: $baseline;
+
+  img {
+    width: 100%;
+  }
+}
+
+.post-table {
+  .table {
+    border-collapse: separate;
+    border-spacing: 0;
+
+    tr:first-child {
+      td {
+        border-radius: 3px 3px 0 0;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .table-bordered {
+    border: none;
+  }
+
+  .post-container {
+    margin: 0 auto;
+  }
+
+}
+
+.user {
+  display: inline-block;
+  //float: left;
+
+  &::before {
+    content: '\f2c0';
+    font-family: 'FontAwesome';
+  }
+
+  p {
+    display: inline;
+    margin-left: $baseline/5;
+  }
+}
+
+.date {
+  float: right;
+}
